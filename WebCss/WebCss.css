@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: serif, sans-serif;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .topnav a {
+        width: 100%;
+        margin-bottom: 8px;
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    #list {
+        margin-left: 10px; /* Adjust the margin for better indentation on smaller screens */
+    }
+    
+    #list li {
+        padding-left: 5px; /* Adjust the padding for better indentation on smaller screens */
+    }
+}
+
+.topnav a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #333333;
+}
+
+.topnav a:nth-child(1) {
+    background-color: #545E75;
+    color: white;
+}
+
+.topnav a:nth-child(2) {
+    background-color: #63adf2;
+    color: white;
+}
+
+.topnav a:nth-child(3) {
+    background-color: #A7CCED;
+    color: white;
+}
+
+.topnav a:nth-child(4) {
+    background-color: #6c8dad;
+    color: white;
+}
+
+.topnav a:nth-child(5) {
+    background-color: #4E6D8D;
+    color: white;
+}
+
+.topnav a:nth-child(6) {
+    background-color: #304d6d;
+    color: white;
+}
+
+.topnav a:nth-child(7) {
+    background-color: #82A0BC;
+    color: white;
+}
+
+.topnav a:nth-child(8) {
+    background-color: darkkhaki;
+    color: white;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #FF0000;
+    color: white;
+}
+
+.content {
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: fit-content; /* or width: auto; */
+    max-width: 100%;
+    margin: 20px auto; /* Add margin to the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.button {
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 15pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #8baddf;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #a0a0d3;    /* 枠の指定 */
+  }
+  .button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #000066;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+  }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 150%;
+  height: 500%;
+
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+  background: #b0e3f3;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.container h1,
+.container h2 {
+    text-align: center;
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add some space between the shopping list and the QR code */
+}
+
+#list {
+    list-style-type: decimal; /* Use decimal numbers as markers for ordered list items */
+    padding: 0;
+    margin-left: 20px; /* Adjust the margin for better indentation */
+
+    text-align: left;
+}
+
+#list li {
+    padding-left: 10px; /* Adjust the padding for better indentation within list items */
+    margin-bottom: 8px; /* Add some spacing between list items */
+}
+
+/* Add this to your existing CSS styles or create a new CSS file */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0; /* Increase padding for the footer */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Increase margin for the footer bottom */
+    border-top: 1px solid #555;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
